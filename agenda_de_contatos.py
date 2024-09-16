@@ -32,3 +32,10 @@ def agenda():
 # Função lambda para formatar os contatos
 formatar_contato = lambda contato: f"{contato['nome']} - {contato['telefone']} - {contato['email']}"
 
+# Função de alta ordem que processa múltiplos contatos
+def processar_contatos(operacao, lista_de_contatos):
+    return [operacao(contato) for contato in lista_de_contatos]
+
+# Inicializando a agenda
+adicionar, remover, buscar, listar = agenda()
+
