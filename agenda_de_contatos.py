@@ -22,10 +22,9 @@ def agenda():
         resultados = [contato for contato in contatos if contato['nome'] == nome]
         return resultados if resultados else f"Contato {nome} não encontrado!"
 
-
-    # Função para listar todos os contatos
+    # Função para listar todos os contatos usando list comprehension
     def listar_contatos():
-        return contatos if contatos else "Nenhum contato encontrado!"
+        return [contato for contato in contatos] if contatos else "Nenhum contato encontrado!"
 
     return adicionar_contato, remover_contato, buscar_contato, listar_contatos
 
