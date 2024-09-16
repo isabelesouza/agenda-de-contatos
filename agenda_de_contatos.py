@@ -50,4 +50,9 @@ remover("Ana")
 # Listando todos os contatos
 todos_contatos = listar()
 
+# Formatando os contatos para exibição
+contatos_formatados = processar_contatos(formatar_contato, todos_contatos)
 
+# Exibindo contatos formatados
+for contato in contatos_formatados:
+    print(contato)
