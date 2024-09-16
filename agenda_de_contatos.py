@@ -21,3 +21,14 @@ def agenda():
     def buscar_contato(nome):
         resultados = [contato for contato in contatos if contato['nome'] == nome]
         return resultados if resultados else f"Contato {nome} não encontrado!"
+
+
+    # Função para listar todos os contatos
+    def listar_contatos():
+        return contatos if contatos else "Nenhum contato encontrado!"
+
+    return adicionar_contato, remover_contato, buscar_contato, listar_contatos
+
+# Função lambda para formatar os contatos
+formatar_contato = lambda contato: f"{contato['nome']} - {contato['telefone']} - {contato['email']}"
+
