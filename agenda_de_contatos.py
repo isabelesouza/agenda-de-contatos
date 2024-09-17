@@ -40,9 +40,9 @@ def processar_contatos(operacao, lista_de_contatos):
 adicionar, remover, buscar, listar = agenda()
 
 # Testando a adição de contatos
-adicionar("Maria", "99999-9999", "maria@example.com")
-adicionar("João", "88888-8888", "joao@example.com")
-adicionar("Ana", "77777-7777", "ana@example.com")
+adicionar("Juliana", "8599999-9999", "juliana@gmail.com")
+adicionar("Miguel", "1198888-8888", "miguel@gmail.com")
+adicionar("Ana", "2197777-7777", "ana@gmail.com")
 
 # Testando a remoção de um contato
 remover("Ana")
